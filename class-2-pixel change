@@ -1,0 +1,15 @@
+import cv2
+import numpy as np
+img=cv2.imread('sifat.jpg',0)
+
+img=cv2.resize(img,(400,400))
+
+               #change pixel of image manually example 
+img_copy=img.copy()
+img_copy[222,211]=200
+img_copy[200,32]=200
+img_copy[300,222]=200
+img_copy[30,32]=200
+
+cv2.imshow('new',img_copy)
+cv2.waitKey(1238760)

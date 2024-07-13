@@ -1,0 +1,16 @@
+ #flip the image
+import cv2
+import numpy as np
+img2=cv2.imread('nodi.jpg')
+img_flip_horiz=cv2.flip(img2,1)
+img_flip_verti=cv2.flip(img2,0)
+img_flip_both=cv2.flip(img2,-1)
+
+
+cv2.imshow('horiz',img_flip_horiz)
+
+cv2.imshow('verti',img_flip_verti)
+
+cv2.imshow('both',img_flip_both)
+
+#cv2.waitKey(1238760)
